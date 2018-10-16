@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>    
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<body>
+<center>
+<h1>Welcome Page | <a href="#">Home</a> | <a href="user-list">User List</a></h1>
+<hr>
+<h3>Login Page</h3>
+
+ <form modelAttribute="userform"  action="user-home/" method="post">  
+            <table> 
+            	<tr>  
+                    <td><label for="user-id">User Id</label></td>  
+                    <td><input type="text" name="id"></input></td>  
+                </tr>  
+                
+                    <td></td>  
+                    <td><input type="submit" value="Login"></input></td>  
+                </tr>  
+            </table>  
+        </form>  
+
+</center>
+</body>
+</html>
